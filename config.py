@@ -159,7 +159,7 @@ widget_defaults = dict(
 )
 
 extension_defaults = widget_defaults.copy()
-spacer = widget.TextBox("", name="spacer", padding='0',)
+spacer = widget.TextBox(" ", name="spacer",)
 separator = widget.TextBox("|", name="separator", foreground='#ffffff',)
 
 screens = [
@@ -174,7 +174,6 @@ screens = [
                     inactive='#808080',
                     ),
                 separator,
-                widget.Prompt(),
                 widget.WindowName(
                     foreground='#74c8ef',
                     ),
@@ -205,7 +204,6 @@ screens = [
                     format='%a %d, %H:%M',
                     foreground='#74c8ef',
                     ),
-                spacer,
             ],
             24,
             background='#0b0c17',
